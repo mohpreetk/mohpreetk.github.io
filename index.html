@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <!-- Set the viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Add icon library -->
@@ -12,10 +13,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 
-    <!-- Link stylesheet and javascript-->
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <!-- Link stylesheets and javascript-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/general.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/header_footer.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/media-queries.css">
-    <script src="controller/script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/light_theme.css" id="theme">
+    <script src="controller/startup.js" defer></script>
+    <script src="controller/main.js" defer></script>
 
 </head>
 
@@ -25,12 +30,13 @@
             Mohpreet Kaur
         </h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="view/about.html">About</a></li>
-                <li><a href="view/projects.html">Projects</a></li>
+            <ul class="nav">
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <!-- <li><a href="#projects">Projects</a></li> -->
             </ul>
         </nav>
+        <!-- Contact and personal links with icons -->
         <div id="links">
             <a href="tel:+12492887290"><i class="fa fa-phone-alt" alt="Call"></i></a>
             <a href="mailto:mohpreet.kaur8@gmail.com"><i class="fa fa-envelope" alt="Email"></i></a>
@@ -40,26 +46,158 @@
     </header>
 
     <main>
-        <p>What is Lorem Ipsum?
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>Where does it come from?
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-            Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-            Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem
-            Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable
-            source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-            of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
-            during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
-            section 1.10.32.
+        <!-- A toggle switch for dark mode -->
+        <div class="switch-holder">
+            <div class="switch-label">
+                Dark Mode
+            </div>
+            <div class="switch-toggle">
+                <input type="checkbox" id="darkMode">
+                <label for="darkMode"></label>
+            </div>
+        </div>
+        <!-- Intro -->
+        <div class="intro">
+            <div class="div1"><img src="images/Mohpreet_Kaur.jpeg" alt="Mohpreet Kaur's Headshot" class="profile"></div>
+            <div class="div2">
+                <h2>Hi, I'm Mohpreet Kaur</h2>
+                <ul>
+                    <li>Web and Software Developer</li>
+                    <li>Data Analyst</li>
+                </ul>
+            </div>
+            <div class="div3">
+                <a href="files/Mohpreet Kaur Resume Jan2022.pdf" download="Mohpreet_Kaur_Resume"><i class="fa fa-download" alt="Download Resume"></i></a>
+            </div>
+        </div>
+        <!-- About -->
+        <div class="content">
+            <div class="content1">
+                <div class="content11">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>Java</li>
+                        <li>ASP.NET C#</li>
+                        <li>HTML5, CSS3</li>
+                        <li>Swift</li>
+                        <li>Javascript, Typescript</li>
+                        <li>DAX</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="content12">
+                    <h2>Technology</h2>
+                    <ul>
+                        <li>Visual Studio</li>
+                        <li>Visual Studio Code</li>
+                        <li>IntelliJ</li>
+                        <li>XCode</li>
+                        <li>PowerBI</li>
+                        <li>Office365, Google WorkSpace</li>
+                        <li>Server Management Studio</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Education -->
+            <div class="content2">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>Diploma in Computer Programming - Georgian College</strong></li>
+                    <ul>
+                        <li>GPA - 96.37/100</li>
+                        <li>Achievements:
+                            <ul>
+                                <li>Board of Governor's Medal Award</li>
+                                <li>International Student Leadership Award</li>
+                                <li>Dean's List - All Semesters</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <!-- Experience -->
+            <div class="content3" id="experience">
+                <h2>Experience</h2>
+                <ul>
+                    <li><strong>Data and Analytics Technician - Regional Municipality of York</strong></li>
+                    <ul>
+                        <li>Successfully reworked on and launched the Region's Hospital Performance Dashboard.</li>
+                        <li>Created highly interactive and powerful dashboards that track Region’s position and
+                            performance in Paramedics and Senior Services.</li>
+                        <li>Assisted in the design and production of reports, presentations and map products.</li>
+                        <li>Collected and Merged Data from multiple sources using ETL principles.</li>
+                    </ul>
+                    <li><strong>Peer Mentor - Georgian College</strong></li>
+                    <ul>
+                        <li>Streamlined the program processes and represented the team at different events which helped
+                            in increasing program enrollment by nearly 170%.</li>
+                        <li>Helped first year students’ transition to college by conducting group meetings, drop-ins and
+                            answering queries in a professional manner.</li>
+                        <li>Worked with the team to find solutions to complex problems/unanswered questions.</li>
+                        <li>Maintained confidentiality and privacy of mentees and and secured their personal
+                            information.</li>
+                    </ul>
+                    <li><strong>Customer Sales Representative - Cell N Computer</strong></li>
+                    <ul>
+                        <li>Communicated with the customers and negotiated the cost.</li>
+                        <li>Answered phone calls, emails and followed up on repaired items in a clear and efficient
+                            manner</li>
+                        <li>Documented the record of products dropped in for repair, making sure the forms are filled
+                            and signed properly.</li>
+                        <li>Managed cash and store inventory.</li>
+                    </ul>
+                </ul>
 
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
-            1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
-            original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+            </div>
+            <!-- Certifications -->
+            <div class="content4" id="certifications">
+                <h2>Certifications</h2>
+                <table>
+                    <tr>
+                        <th>Certificate</th>
+                        <th>Issued In</th>
+                        <th>Expiry</th>
+                    </tr>
+                    <tr>
+                        <td>IELTS General Training</td>
+                        <td>January 2022</td>
+                        <td>January 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Step UP! Bystander Intervention Training</td>
+                        <td>March 2021</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>START Training for Suicide Prevention</td>
+                        <td>February 2021</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Safer Spaces Training for 2S-LGBTQ+ Inclusion</td>
+                        <td>January 2021</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>First Aid Level C</td>
+                        <td>July 2020</td>
+                        <td>July 2023</td>
+                    </tr>
+                    <tr>
+                        <td>MS Office Suite Certification</td>
+                        <td>October 2019</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+
+            </div>
+            <!-- Projects
+            <div class="content5" id="projects">
+                <h2>Projects</h2>
+                <ul></ul>
+
+            </div> -->
+        </div>
     </main>
     <footer>
 

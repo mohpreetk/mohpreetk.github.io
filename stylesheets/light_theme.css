@@ -1,0 +1,54 @@
+header,
+footer {
+    background-color: rgb(243, 197, 243);
+}
+
+.nav>li {
+    background-color: rgb(250, 184, 162);
+}
+
+.nav>li>a {
+    color: midnightblue;
+}
+
+.fa-phone-alt,
+h1 {
+    color: green;
+}
+
+.fa-linkedin {
+    color: #0a66c2;
+}
+
+.fa-github {
+    color: black;
+}
+
+.fa-envelope {
+    color: #d93025;
+}
+
+.fa-download {
+    color: white;
+}
+
+.div3 a{
+    background-color: goldenrod;
+}
+
+h2 {
+    color: purple;
+}
+
+strong {
+    color: navy;
+}
+
+table {
+    color: black;
+    border: black;
+}
+
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+}

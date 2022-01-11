@@ -1,0 +1,81 @@
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    vertical-align: top;
+    position: sticky;
+    top: 0px;
+    z-index: 0;
+    margin-bottom: 1rem;
+}
+
+/* ------------------------------------------------------- */
+/* Nav Bar and List */
+nav {
+    display: none;
+    position: fixed;
+    width: 100vw;  
+}
+
+.nav{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav > li {
+    display: inline;
+    padding: 10px;
+}
+
+.nav > li > a {
+    font-size: 1.2rem;
+}
+
+/* Icons */
+i {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+/* styling the alt text like a tooltip */
+#links i[alt]:hover::after {
+    content: attr(alt);
+    position: inherit;
+    top: -100%;
+    left: 0px;
+}
+
+#links {
+    position: fixed;
+    display: none;
+    z-index: 3;
+}
+
+/* ------------------------------------------------------- */
+/* H1 */
+h1 {
+    position: fixed;
+    display: inline;
+    font-family: 'Courgette', cursive;
+}
+
+/* -------------------------------------------------------- */
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 3rem;
+    vertical-align: bottom;
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 1rem;
+}

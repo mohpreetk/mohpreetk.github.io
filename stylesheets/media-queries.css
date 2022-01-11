@@ -1,25 +1,28 @@
-/* Responsive Design Rules*/
-/* Extra small devices (phones, 500px and down) */
-@media only screen and (max-width: 500px) {
+/* Responsive Design Rules. From W3Schools.com*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     html {
-        font-size: 12px;
+        font-size: 10px;
     }
-    nav {
-        display: none !important;
+    .content1 {
+        flex-direction: column;
+    }
+    .content1 > div{
+        width: 100%;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 500px and up) */
-@media only screen and (min-width: 500px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
     html {
-        font-size: 13px;
+        font-size: 11px;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     html {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
