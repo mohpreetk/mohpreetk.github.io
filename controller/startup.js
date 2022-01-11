@@ -8,6 +8,7 @@ var links = document.getElementById("links");
 var id = null;
 
 window.onload = function () {
+  checkbox.checked = false
   setTimeout(moveH1, 500);
 };
 

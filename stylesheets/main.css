@@ -92,13 +92,7 @@ main {
 
 .div3 a {
     padding: 0.5rem;
-    border-radius: 20%;
-}
-.div3 i[alt]:hover::after {
-    content: attr(alt);
-    position: inherit;
-    top: -100%;
-    left: 0px;
+    border-radius: 3%;
 }
 
 .profile {
