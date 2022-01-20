@@ -2,11 +2,18 @@
 <html>
 
 <head>
-    <!-- Set the viewport -->
+    <!-- Set the responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Add icon library -->
+    <!-- Add icon to tab -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- Add icon library (fontawesome and devicon) -->
     <script src="https://kit.fontawesome.com/11a9c42225.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
 
     <!-- Add font library -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +36,14 @@
         <h1 id="myName">
             Mohpreet Kaur
         </h1>
+
+        <!-- Contact and personal links with font awesome icons -->
+        <div id="links">
+            <a href="tel:+12492887290"><i class="fa fa-phone-alt" alt="Call"></i></a>
+            <a href="mailto:mohpreet.kaur8@gmail.com"><i class="fa fa-envelope" alt="Email"></i></a>
+            <a href="https://www.linkedin.com/in/mohpreetk/"><i class="fa fa-linkedin" alt="LinkedIn"></i></a>
+            <a href="https://github.com/mohpreetk"><i class="fab fa-github" alt="GitHub"></i></a>
+        </div>
         <nav>
             <ul class="nav">
                 <li><a href="#experience">Experience</a></li>
@@ -36,13 +51,6 @@
                 <!-- <li><a href="#projects">Projects</a></li> -->
             </ul>
         </nav>
-        <!-- Contact and personal links with icons -->
-        <div id="links">
-            <a href="tel:+12492887290"><i class="fa fa-phone-alt" alt="Call"></i></a>
-            <a href="mailto:mohpreet.kaur8@gmail.com"><i class="fa fa-envelope" alt="Email"></i></a>
-            <a href="https://www.linkedin.com/in/mohpreetk/"><i class="fa fa-linkedin" alt="LinkedIn"></i></a>
-            <a href="https://github.com/mohpreetk"><i class="fab fa-github" alt="GitHub"></i></a>
-        </div>
     </header>
 
     <main>
@@ -58,46 +66,126 @@
         </div>
         <!-- Intro -->
         <div class="intro">
-            <div class="div1"><img src="images/Mohpreet_Kaur.jpeg" alt="Mohpreet Kaur's Headshot" class="profile"></div>
-            <div class="div2">
-                <h2>Hi, I'm Mohpreet Kaur</h2>
+            <div class="introdiv1"><img src="images/Mohpreet_Kaur.jpeg" alt="Mohpreet Kaur's Headshot" class="profile">
+            </div>
+            <div class="introdiv2">
+                <h2>Hi, I'm Mohpreet Kaur <em>(She/Her/Hers)</em></h2>
                 <ul>
-                    <li>Junior Developer</li>
-                    <li>Data Analyst</li>
+                    <li>🌐 Web Developer</li>
+                    <li>🎮 Software/Game Developer</li>
+                    <li>📈 Data Analyst</li>
                 </ul>
             </div>
-            <div class="div3">
-                <a href="files/Mohpreet Kaur Resume Jan2022.pdf" download="Mohpreet_Kaur_Resume">Resume<i class="fa fa-download" alt="Download Resume"></i></a>
+            <div class="introdiv3">
+                <a href="files/Mohpreet Kaur Resume January 2022.pdf" download="Mohpreet_Kaur_Resume">Resume<i
+                        class="fa fa-download" alt="Download Resume"></i></a>
             </div>
         </div>
         <!-- About -->
-        <div class="content">
-            <div class="content1">
-                <div class="content11">
-                    <h2>Languages Known</h2>
-                    <ul>
-                        <li>Java</li>
-                        <li>ASP.NET C#</li>
-                        <li>HTML5, CSS3</li>
-                        <li>Swift</li>
-                        <li>Javascript, Typescript</li>
-                        <li>DAX</li>
-                        <li>SQL</li>
-                    </ul>
+        <article>
+            <div class="panel">
+                <h2>About Me!</h2>
+                <p>I am a <b>Computer Programming</b> graduate from <em>Georgian College</em>.</p>
+                <p> I have
+                <ul>
+                    <li> 1+ year academic experience in website and app development.</li>
+                    <li> 1+ year experience in mentoring/leadership.</li>
+                    <li> 2+ year experience in customer service.</li>
+                    <li> 4 month experience working as a Data Analyst during my internship.</li>
+                </ul>
+                </p>
+                <p>I like creating new things and therefore think specific language does not matter. You will see
+                    projects
+                    with so many different languages in my profile because I keep learning and growing. I feel that
+                    programming languages are similar in so many way and different in so many other.</p>
+                <p>I am passionate about Code👩‍💻 and like to create with max accuracy and best practices.</p>
+                <p>I am currently looking🔎 for an Entry level development job to launch my career in the industry.</p>
+                <p>Skills:
+                <ul>
+                    <li> Leadership </li>
+                    <li> People Management </li>
+                    <li> Mentoring </li>
+                    <li> Time Management </li>
+                    <li> Analytical </li>
+                    <li> Decision Making </li>
+                </ul>
+                </p>
+            </div>
+        </article>
+
+        <article id="projects">
+            <h2>Projects</h2>
+            <section class="projectSection">
+                <div class="cardbox">
+                    <div class="card">
+                        <img src="images/MemoryMaster.png" alt="Memory Master" class="cardImage">
+                        <h3>Memory Master</h3>
+                        <p>An IOS based mobile game. You will flip the tiles and try to match them all. It comes
+                            with different themes and difficulty levels. The user data will be stored on local
+                            machine and can be reset.</p>
+                    </div>
                 </div>
-                <div class="content12">
-                    <h2>Technology</h2>
-                    <ul>
-                        <li>Visual Studio</li>
-                        <li>Visual Studio Code</li>
-                        <li>IntelliJ</li>
-                        <li>XCode</li>
-                        <li>PowerBI</li>
-                        <li>Office365, Google WorkSpace</li>
-                        <li>Server Management Studio</li>
-                    </ul>
+                <div class="cardbox">
+                    <div class="card">
+                        <img src="images/DecorAndHandicraftMerchant.png" alt="Decor and Handicraft Merchant"
+                            class="cardImage">
+                        <h3>Decor and Handicraft Merchant</h3>
+                        <p>A shopping website created using ASP.NET C#. It allows the users to register, login, shop
+                            and checkout through Stripe Gateway. The owner can add, delete or edit the products and
+                            see all orders and carts.</p>
+                    </div>
+                </div>
+                <div class="cardbox">
+                    <div class="card">
+                        <img src="images/SuknirToursAndTravels.png" alt="Suknir Tours And Travels"
+                            class="cardImage">
+                        <h3>Suknir Tours And Travels</h3>
+                        <p>A Tours and Travels website created to provide information about different destinations
+                            and packages and for user inquirires. Provides a beautiful user interface with different
+                            html tags being put into practice.</p>
+                    </div>
+                </div>
+                <div class="cardbox">
+                    <div class="card">
+                        <img src="images/BankAppDemo.png" alt="Bank App Demo" class="cardImage">
+                        <h3>Bank App Demo</h3>
+                        <p>A Java console application that applies the fundamentals of language to create a mock-up
+                            of banking application allowing the user to create account and view details. The console
+                            uses navigation system for different options.</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+        
+        <div class="content">
+            <!-- <div class="content1">
+                <h2>Languages Known</h2>
+                <div class="langicons">
+                    <i class="devicon-java-plain-wordmark colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-csharp-plain colored"></i>
+                    <i class="devicon-dotnetcore-plain colored"></i>
+                    <i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-typescript-plain colored"></i>
+                    <i class="devicon-microsoftsqlserver-plain-wordmark colored"></i>
+                    <i class="devicon-swift-plain-wordmark colored"></i>
+                    <i class="devicon-php-plain colored"></i>
                 </div>
             </div>
+            <div class="content2">
+                <h2>Tools</h2>
+                <div class="toolicons">
+                    <img src="/images/intellij.svg" alt="IntelliJ icon">
+                    <img src="/images/visual.svg" alt="Visual Studio icon">
+                    <img src="/images/visual-studio-code.svg" alt="Visual Studio Code icon">
+                    <img src="/images/xcode.svg" alt="XCode icon">
+                    <img src="/images/power-bi.svg" alt="Power BI icon">
+                    <img src="/images/office-365.svg" alt="Office 365 icon">
+                    <img src="/images/atom.svg" alt="Atom icon">
+                </div>
+            </div> -->
+            
             <!-- Education -->
             <div class="content2">
                 <h2>Education</h2>
@@ -191,12 +279,7 @@
                 </table>
 
             </div>
-            <!-- Projects
-            <div class="content5" id="projects">
-                <h2>Projects</h2>
-                <ul></ul>
-
-            </div> -->
+        </div>
         </div>
     </main>
     <footer>

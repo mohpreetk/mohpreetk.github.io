@@ -32,7 +32,7 @@ h1 {
     color: white;
 }
 
-.div3 a{
+.introdiv3 a{
     background-color: goldenrod;
     color: white;
     text-decoration: none;
@@ -40,6 +40,14 @@ h1 {
 
 h2 {
     color: purple;
+}
+
+.panel {
+   background-image: linear-gradient(to top left,  #838080, #ffffff);
+}
+
+.card {
+    background-color: bisque;
 }
 
 strong {

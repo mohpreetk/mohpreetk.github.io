@@ -35,7 +35,7 @@ h1 {
     color: white;
 }
 
-.div3 a{
+.introdiv3 a{
     background-color: goldenrod;
     color: white;
     text-decoration: none;
@@ -45,8 +45,18 @@ h2 {
     color: rgb(212, 111, 212);
 }
 
+.panel {
+    background-image: linear-gradient(to top left,  #838080, #000000);
+    color: #ffffff;
+}
+
 li {
     color: rgb(252, 252, 161);
+}
+
+.card {
+    background-color: #838080;
+    color: black;
 }
 
 strong {

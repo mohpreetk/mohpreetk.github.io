@@ -4,10 +4,15 @@
     html {
         font-size: 10px;
     }
-    .content1 {
-        flex-direction: column;
+    .langicons > i {
+        width: 25%;
     }
-    .content1 > div{
+
+    .toolicons > img {
+        width: 25%;
+    }
+
+    .cardbox {
         width: 100%;
     }
 }
