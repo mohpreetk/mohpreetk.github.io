@@ -18,7 +18,9 @@
     <!-- Add font library -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Courgette&family=Emilys+Candy&family=PT+Sans&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Courgette&family=Emilys+Candy&family=PT+Sans&display=swap"
+        rel="stylesheet">
 
     <!-- Link stylesheets and javascript-->
     <link rel="stylesheet" type="text/css" href="stylesheets/general.css">
@@ -46,12 +48,14 @@
         </div>
 
         <!-- Nav Bar -->
-        <nav>
-            <ul class="nav">
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <!-- <li><a href="#projects">Projects</a></li> -->
-            </ul>
+        <nav class="nav">
+            <button class="menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a href="#aboutMe" class="navitem">About</a>
+            <a href="#projects" class="navitem">Projects</a>
+            <a href="#experience" class="navitem">Experience</a>
+            <a href="#certifications" class="navitem">Certifications</a>
         </nav>
     </header>
 
@@ -85,7 +89,7 @@
             </div>
         </div>
         <!-- About -->
-        <article>
+        <article id="aboutMe">
             <div class="panel">
                 <h2>About Me!</h2>
                 <p>I am a <b>Computer Programming</b> graduate from <em>Georgian College</em>.</p>
@@ -218,9 +222,8 @@
             </div>
         </article> -->
 
-
         <!-- Certifications -->
-        <div class="content4" id="certifications">
+        <article id="certifications">
             <h2>Certifications</h2>
             <table>
                 <tr>
@@ -259,10 +262,7 @@
                     <td>-</td>
                 </tr>
             </table>
-
-        </div>
-        </div>
-        </div>
+        </article>
 
         <!-- <div class="content1">
                 <h2>Languages Known</h2>

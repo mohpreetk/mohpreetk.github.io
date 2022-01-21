@@ -3,11 +3,8 @@ footer {
     background-color: rgb(243, 197, 243);
 }
 
-.nav>li {
+nav>a {
     background-color: rgb(250, 184, 162);
-}
-
-.nav>li>a {
     color: midnightblue;
 }
 

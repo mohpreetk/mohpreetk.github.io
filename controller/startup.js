@@ -84,15 +84,9 @@ function showOthers() {
   nav.style.display = "inline-block";
   main.style.display = "flex";
   if (window.matchMedia("(max-width: 600px)").matches) {
-    footer.appendChild(nav);
-    nav.style.bottom = "10px";
-    nav.style.top = "unset";
-    footer.style.visibility = "visible";
+    nav.className = "responsiveNav";
   } else {
-    nav.style.bottom = "unset";
-    nav.style.top = "10px";
-    header.appendChild(nav);
-    footer.style.visibility = "hidden";
+    nav.className = "nav";
   }
 }
 

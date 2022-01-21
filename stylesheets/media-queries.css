@@ -4,11 +4,12 @@
     html {
         font-size: 9px;
     }
-    .langicons > i {
+
+    .langicons>i {
         width: 25%;
     }
 
-    .toolicons > img {
+    .toolicons>img {
         width: 25%;
     }
 

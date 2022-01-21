@@ -6,11 +6,9 @@ body {
 header, footer {
     background-color: #353535;
 }
-.nav>li {
-    background-color: rgb(233, 207, 199);
-}
 
-.nav>li>a {
+nav>a {
+    background-color: rgb(233, 207, 199);
     color: rgb(56, 56, 170);
 }
 
