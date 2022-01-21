@@ -96,6 +96,7 @@ main {
     flex: 2;
     text-align: right;
     font-size: 0.9rem;
+    white-space: nowrap;
 }
 
 .introdiv3 a {
