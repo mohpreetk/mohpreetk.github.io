@@ -45,13 +45,13 @@ h2 {
     color: rgb(212, 111, 212);
 }
 
+.introdiv2 li {
+    color: rgb(252, 252, 161);
+}
+
 .panel {
     background-image: linear-gradient(to top left,  #838080, #000000);
     color: #ffffff;
-}
-
-li {
-    color: rgb(252, 252, 161);
 }
 
 .card {

@@ -4,7 +4,7 @@ main {
     flex-direction: column;
     justify-content: left;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     height: 100%;
 }
 
@@ -72,19 +72,20 @@ main {
 }
 
 /* ---------------------------------------------------------------- */
-/* Main Content Styling */
 /* Intro Section */
 .intro {
     flex-direction: row;
-    margin-left: 10px;
+    align-self: center;
 }
 
 .introdiv1 {
     flex: 2;
+    text-align: right;
 }
 
 .introdiv2 {
-    flex: 5;
+    flex: 6;
+    padding-left: 8px;
 }
 
 .introdiv2 > ul {
@@ -92,14 +93,17 @@ main {
 }
 
 .introdiv3 {
-    flex: 3;
+    flex: 2;
     text-align: right;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .introdiv3 a {
     padding: 0.5rem;
     border-radius: 3%;
+}
+.hello {
+    text-align: left;
 }
 
 .profile {
@@ -108,10 +112,9 @@ main {
     border-radius: 50%;
 }
 
-.content,
 .intro {
     display: flex;
-    width: 99%;
+    width: 98%;
 }
 
 /* ---------------------------------------------------------------- */
@@ -150,26 +153,11 @@ main {
     border-radius: 3%;
 }
 
-
-.content {
-    flex-direction: column;
+h3 > a {
+    color: unset;
 }
 
-.content>div,
-.content h2,
-.content table,
-.content strong {
-    margin-top: 0.8rem;
-}
-
-.content1,
-.content2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 10px 10px 10px;
-}
-
+/* 
 .content1:hover,
 .content2:hover {
     outline: 7px dashed #a3ffa3;
@@ -206,7 +194,7 @@ main {
     width: 20%;
     padding: 10px 6%;
     height: auto;
-}
+} */
 
 /* List Styles */
 ul {
@@ -231,12 +219,15 @@ ul ul ul {
 table,
 th,
 td {
-    border: 1px solid;
+    border: 1px groove;
     border-collapse: collapse;
 }
 
 table {
-    width: 99%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
 }
 
 tr td:nth-child(2),

@@ -18,7 +18,7 @@
     <!-- Add font library -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Courgette&family=Emilys+Candy&family=PT+Sans&display=swap" rel="stylesheet">
 
     <!-- Link stylesheets and javascript-->
     <link rel="stylesheet" type="text/css" href="stylesheets/general.css">
@@ -44,6 +44,8 @@
             <a href="https://www.linkedin.com/in/mohpreetk/"><i class="fa fa-linkedin" alt="LinkedIn"></i></a>
             <a href="https://github.com/mohpreetk"><i class="fab fa-github" alt="GitHub"></i></a>
         </div>
+
+        <!-- Nav Bar -->
         <nav>
             <ul class="nav">
                 <li><a href="#experience">Experience</a></li>
@@ -69,7 +71,8 @@
             <div class="introdiv1"><img src="images/Mohpreet_Kaur.jpeg" alt="Mohpreet Kaur's Headshot" class="profile">
             </div>
             <div class="introdiv2">
-                <h2>Hi, I'm Mohpreet Kaur <em>(She/Her/Hers)</em></h2>
+                <h2 class="hello">Hi, I'm Mohpreet Kaur <small>(She/Her/Hers)</small>
+                </h2>
                 <ul>
                     <li>🌐 Web Developer</li>
                     <li>🎮 Software/Game Developer</li>
@@ -113,13 +116,14 @@
             </div>
         </article>
 
+        <!-- Projects -->
         <article id="projects">
             <h2>Projects</h2>
             <section class="projectSection">
                 <div class="cardbox">
                     <div class="card">
                         <img src="images/MemoryMaster.png" alt="Memory Master" class="cardImage">
-                        <h3>Memory Master</h3>
+                        <h3><a href="https://github.com/mohpreetk/MemoryMaster">Memory Master</a></h3>
                         <p>An IOS based mobile game. You will flip the tiles and try to match them all. It comes
                             with different themes and difficulty levels. The user data will be stored on local
                             machine and can be reset.</p>
@@ -129,7 +133,8 @@
                     <div class="card">
                         <img src="images/DecorAndHandicraftMerchant.png" alt="Decor and Handicraft Merchant"
                             class="cardImage">
-                        <h3>Decor and Handicraft Merchant</h3>
+                        <h3><a href="https://decorandhandicraftmerchant.azurewebsites.net/">Decor and Handicraft
+                                Merchant</a></h3>
                         <p>A shopping website created using ASP.NET C#. It allows the users to register, login, shop
                             and checkout through Stripe Gateway. The owner can add, delete or edit the products and
                             see all orders and carts.</p>
@@ -137,9 +142,9 @@
                 </div>
                 <div class="cardbox">
                     <div class="card">
-                        <img src="images/SuknirToursAndTravels.png" alt="Suknir Tours And Travels"
-                            class="cardImage">
-                        <h3>Suknir Tours And Travels</h3>
+                        <img src="images/SuknirToursAndTravels.png" alt="Suknir Tours And Travels" class="cardImage">
+                        <h3><a href="https://mohpreetk.github.io/SuknirToursAndTravels/">Suknir Tours And Travels</a>
+                        </h3>
                         <p>A Tours and Travels website created to provide information about different destinations
                             and packages and for user inquirires. Provides a beautiful user interface with different
                             html tags being put into practice.</p>
@@ -148,7 +153,7 @@
                 <div class="cardbox">
                     <div class="card">
                         <img src="images/BankAppDemo.png" alt="Bank App Demo" class="cardImage">
-                        <h3>Bank App Demo</h3>
+                        <h3><a href="https://github.com/mohpreetk/Bank-app-demo">Bank App Demo</a></h3>
                         <p>A Java console application that applies the fundamentals of language to create a mock-up
                             of banking application allowing the user to create account and view details. The console
                             uses navigation system for different options.</p>
@@ -156,55 +161,10 @@
                 </div>
             </section>
         </article>
-        
-        <div class="content">
-            <!-- <div class="content1">
-                <h2>Languages Known</h2>
-                <div class="langicons">
-                    <i class="devicon-java-plain-wordmark colored"></i>
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-csharp-plain colored"></i>
-                    <i class="devicon-dotnetcore-plain colored"></i>
-                    <i class="devicon-html5-plain-wordmark colored"></i>
-                    <i class="devicon-css3-plain-wordmark colored"></i>
-                    <i class="devicon-typescript-plain colored"></i>
-                    <i class="devicon-microsoftsqlserver-plain-wordmark colored"></i>
-                    <i class="devicon-swift-plain-wordmark colored"></i>
-                    <i class="devicon-php-plain colored"></i>
-                </div>
-            </div>
-            <div class="content2">
-                <h2>Tools</h2>
-                <div class="toolicons">
-                    <img src="/images/intellij.svg" alt="IntelliJ icon">
-                    <img src="/images/visual.svg" alt="Visual Studio icon">
-                    <img src="/images/visual-studio-code.svg" alt="Visual Studio Code icon">
-                    <img src="/images/xcode.svg" alt="XCode icon">
-                    <img src="/images/power-bi.svg" alt="Power BI icon">
-                    <img src="/images/office-365.svg" alt="Office 365 icon">
-                    <img src="/images/atom.svg" alt="Atom icon">
-                </div>
-            </div> -->
-            
-            <!-- Education -->
-            <div class="content2">
-                <h2>Education</h2>
-                <ul>
-                    <li><strong>Diploma in Computer Programming - Georgian College</strong></li>
-                    <ul>
-                        <li>GPA - 96.37/100</li>
-                        <li>Achievements:
-                            <ul>
-                                <li>Board of Governor's Medal Award</li>
-                                <li>International Student Leadership Award</li>
-                                <li>Dean's List - All Semesters</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </ul>
-            </div>
-            <!-- Experience -->
-            <div class="content3" id="experience">
+
+        <!-- Experience -->
+        <article id="experience">
+            <div class="panel">
                 <h2>Experience</h2>
                 <ul>
                     <li><strong>Data and Analytics Technician - Regional Municipality of York</strong></li>
@@ -235,52 +195,102 @@
                         <li>Managed cash and store inventory.</li>
                     </ul>
                 </ul>
-
             </div>
-            <!-- Certifications -->
-            <div class="content4" id="certifications">
-                <h2>Certifications</h2>
-                <table>
-                    <tr>
-                        <th>Certificate</th>
-                        <th>Issued In</th>
-                        <th>Expiry</th>
-                    </tr>
-                    <tr>
-                        <td>IELTS General Training</td>
-                        <td>January 2022</td>
-                        <td>January 2024</td>
-                    </tr>
-                    <tr>
-                        <td>Step UP! Bystander Intervention Training</td>
-                        <td>March 2021</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>START Training for Suicide Prevention</td>
-                        <td>February 2021</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>Safer Spaces Training for 2S-LGBTQ+ Inclusion</td>
-                        <td>January 2021</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>First Aid Level C</td>
-                        <td>July 2020</td>
-                        <td>July 2023</td>
-                    </tr>
-                    <tr>
-                        <td>MS Office Suite Certification</td>
-                        <td>October 2019</td>
-                        <td>-</td>
-                    </tr>
-                </table>
+        </article>
 
+        <!-- Education
+        <article>
+            <div class="panel">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>Diploma in Computer Programming - Georgian College</strong></li>
+                    <ul>
+                        <li>GPA - 96.37/100</li>
+                        <li>Achievements:
+                            <ul>
+                                <li>Board of Governor's Medal Award</li>
+                                <li>International Student Leadership Award</li>
+                                <li>Dean's List - All Semesters</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
             </div>
+        </article> -->
+
+
+        <!-- Certifications -->
+        <div class="content4" id="certifications">
+            <h2>Certifications</h2>
+            <table>
+                <tr>
+                    <th>Certificate</th>
+                    <th>Issued In</th>
+                    <th>Expiry</th>
+                </tr>
+                <tr>
+                    <td>IELTS General Training</td>
+                    <td>January 2022</td>
+                    <td>January 2024</td>
+                </tr>
+                <tr>
+                    <td>Step UP! Bystander Intervention Training</td>
+                    <td>March 2021</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>START Training for Suicide Prevention</td>
+                    <td>February 2021</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Safer Spaces Training for 2S-LGBTQ+ Inclusion</td>
+                    <td>January 2021</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>First Aid Level C</td>
+                    <td>July 2020</td>
+                    <td>July 2023</td>
+                </tr>
+                <tr>
+                    <td>MS Office Suite Certification</td>
+                    <td>October 2019</td>
+                    <td>-</td>
+                </tr>
+            </table>
+
         </div>
         </div>
+        </div>
+
+        <!-- <div class="content1">
+                <h2>Languages Known</h2>
+                <div class="langicons">
+                    <i class="devicon-java-plain-wordmark colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-csharp-plain colored"></i>
+                    <i class="devicon-dotnetcore-plain colored"></i>
+                    <i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-typescript-plain colored"></i>
+                    <i class="devicon-microsoftsqlserver-plain-wordmark colored"></i>
+                    <i class="devicon-swift-plain-wordmark colored"></i>
+                    <i class="devicon-php-plain colored"></i>
+                </div>
+            </div>
+            <div class="content2">
+                <h2>Tools</h2>
+                <div class="toolicons">
+                    <img src="/images/intellij.svg" alt="IntelliJ icon">
+                    <img src="/images/visual.svg" alt="Visual Studio icon">
+                    <img src="/images/visual-studio-code.svg" alt="Visual Studio Code icon">
+                    <img src="/images/xcode.svg" alt="XCode icon">
+                    <img src="/images/power-bi.svg" alt="Power BI icon">
+                    <img src="/images/office-365.svg" alt="Office 365 icon">
+                    <img src="/images/atom.svg" alt="Atom icon">
+                </div>
+            </div> -->
     </main>
     <footer>
 
