@@ -8,8 +8,11 @@
 /* Html */ 
 html {
     scroll-padding-top: 3rem;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
+    max-width: 100%; 
+    overflow-x: hidden;
 }
+
 /* Body */
 body {
     font-family: 'PT Sans', sans-serif;
