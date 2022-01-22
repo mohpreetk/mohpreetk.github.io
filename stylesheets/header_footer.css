@@ -9,7 +9,7 @@ header {
     vertical-align: top;
     position: sticky;
     top: 0px;
-    z-index: 0;
+    z-index: 1;
     margin-bottom: 1rem;
 }
 
@@ -33,6 +33,7 @@ nav >  a {
 
 .responsiveNav {
     width: fit-content;
+    width: -moz-fit-content;
 }
 
 .responsiveNav:hover .navitem{
@@ -46,6 +47,7 @@ nav >  a {
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
+    width: -moz-fit-content;
     position: relative;
 }
 
@@ -101,6 +103,7 @@ footer {
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .langicons > i {
