@@ -17,7 +17,7 @@ header {
 /* Nav Bar and List */
 nav {
     display: none;
-    position: fixed;
+    position: relative;
     width: 100vw; 
     max-height: 3rem; 
 }
@@ -37,20 +37,22 @@ nav >  a {
 
 .responsiveNav:hover .navitem{
     display: block;
-    position: relative;
-    top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
+    
 }
 
 .responsiveNav .navitem {
     display: none;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    position: relative;
 }
 
 .responsiveNav .menu {
     display: inline;
+    position: fixed;
+    top: 2px;
 }
 
 /* Icons */
@@ -89,8 +91,40 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 3rem;
     vertical-align: bottom;
-    width: 100%;
+    padding: 0 10px 0 10px;
     margin-top: 1rem;
+}
+
+.langicons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.langicons > i {
+    width: 20%;
+    font-size: 4rem;
+    font-weight: 400;
+    padding: 10px;
+    animation: 1.5s shakeIcons linear infinite;
+}
+
+@keyframes shakeIcons {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
 }
