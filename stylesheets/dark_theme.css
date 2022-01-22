@@ -6,11 +6,9 @@ body {
 header, footer {
     background-color: #353535;
 }
-.nav>li {
-    background-color: rgb(233, 207, 199);
-}
 
-.nav>li>a {
+nav>a {
+    background-color: rgb(233, 207, 199);
     color: rgb(56, 56, 170);
 }
 
@@ -35,7 +33,7 @@ h1 {
     color: white;
 }
 
-.div3 a{
+.introdiv3 a{
     background-color: goldenrod;
     color: white;
     text-decoration: none;
@@ -45,8 +43,18 @@ h2 {
     color: rgb(212, 111, 212);
 }
 
-li {
+.introdiv2 li {
     color: rgb(252, 252, 161);
+}
+
+.panel {
+    background-image: linear-gradient(to top left,  #838080, #000000);
+    color: #ffffff;
+}
+
+.card {
+    background-color: #838080;
+    color: black;
 }
 
 strong {
@@ -69,3 +77,6 @@ tr:nth-child(even) {
     background-color: #838080;
 }
 
+footer a {
+    color: rgb(0, 153, 255);
+}

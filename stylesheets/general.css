@@ -8,8 +8,11 @@
 /* Html */ 
 html {
     scroll-padding-top: 3rem;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
+    max-width: 100%; 
+    overflow-x: hidden;
 }
+
 /* Body */
 body {
     font-family: 'PT Sans', sans-serif;
@@ -19,10 +22,13 @@ body {
 /* Headings */
 h1 {
     font-size: 2rem;
+    font-family: 'Berkshire Swash', cursive;
 }
 
 h2 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: 'Emilys Candy', cursive;
 }
 
 h3 {
@@ -30,5 +36,13 @@ h3 {
 }
 
 p {
+    font-size: 1.2rem;
+}
+
+small {
     font-size: 1rem;
+}
+
+strong {
+    font-family: 'Courgette', cursive;
 }

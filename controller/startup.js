@@ -6,8 +6,10 @@ var footer = document.querySelector("footer");
 var nav = document.querySelector("nav");
 var links = document.getElementById("links");
 var id = null;
+var pageVisited = sessionStorage.getItem("homepage.visited");
 
 window.onload = function () {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   checkbox.checked = false
   setTimeout(moveH1, 500);
@@ -16,6 +18,12 @@ window.onload = function () {
   if (pageVisited == null) {
     sessionStorage.setItem("homepage.visited", 1);
     setTimeout(moveH1, 3);
+=======
+  checkbox.checked = false;
+  if (pageVisited == null) {
+    sessionStorage.setItem("homepage.visited", 1);
+    setTimeout(moveH1, 300);
+>>>>>>> 9f0bf50db7144898bb75be310a0295a7a03310ab
   } else {
     h1.style.top = "0px";
     h1.style.left = "0px";
@@ -24,7 +32,10 @@ window.onload = function () {
     links.style.display = "inline";
     showOthers();
   }
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> 9f0bf50db7144898bb75be310a0295a7a03310ab
 };
 
 function moveH1() {
@@ -39,8 +50,12 @@ function moveH1() {
       h1.style.left = "0px";
       clearInterval(id);
       links.style.display = "inline";
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       setTimeout(moveLinks, 500);
+=======
+      setTimeout(moveLinks, 300);
+>>>>>>> 9f0bf50db7144898bb75be310a0295a7a03310ab
     } else if (h1PosTop <= 1) {
       h1PosLeft--;
 =======
@@ -94,15 +109,9 @@ function showOthers() {
   nav.style.display = "inline-block";
   main.style.display = "flex";
   if (window.matchMedia("(max-width: 600px)").matches) {
-    footer.appendChild(nav);
-    nav.style.bottom = "10px";
-    nav.style.top = "unset";
-    footer.style.visibility = "visible";
+    nav.className = "responsiveNav";
   } else {
-    nav.style.bottom = "unset";
-    nav.style.top = "10px";
-    header.appendChild(nav);
-    footer.style.visibility = "hidden";
+    nav.className = "nav";
   }
 }
 

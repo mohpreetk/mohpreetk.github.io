@@ -2,12 +2,18 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     html {
-        font-size: 10px;
+        font-size: 9px;
     }
-    .content1 {
-        flex-direction: column;
+
+    .langicons>i {
+        width: 25%;
     }
-    .content1 > div{
+
+    .toolicons>img {
+        width: 25%;
+    }
+
+    .cardbox {
         width: 100%;
     }
 }
