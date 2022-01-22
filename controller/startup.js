@@ -9,21 +9,10 @@ var id = null;
 var pageVisited = sessionStorage.getItem("homepage.visited");
 
 window.onload = function () {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-  checkbox.checked = false
-  setTimeout(moveH1, 500);
-=======
   checkbox.checked = false;
   if (pageVisited == null) {
     sessionStorage.setItem("homepage.visited", 1);
     setTimeout(moveH1, 3);
-=======
-  checkbox.checked = false;
-  if (pageVisited == null) {
-    sessionStorage.setItem("homepage.visited", 1);
-    setTimeout(moveH1, 300);
->>>>>>> 9f0bf50db7144898bb75be310a0295a7a03310ab
   } else {
     h1.style.top = "0px";
     h1.style.left = "0px";
@@ -32,10 +21,6 @@ window.onload = function () {
     links.style.display = "inline";
     showOthers();
   }
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> 9f0bf50db7144898bb75be310a0295a7a03310ab
 };
 
 function moveH1() {
@@ -43,26 +28,16 @@ function moveH1() {
   var h1PosLeft = h1Rect.left;
   var h1PosTop = h1Rect.top;
   clearInterval(id);
-  id = setInterval(frame, 0.002);
+  id = setInterval(frame, 2);
   function frame() {
     if (h1PosTop <= 3 && h1PosLeft <= 3) {
       h1.style.top = "0px";
       h1.style.left = "0px";
       clearInterval(id);
       links.style.display = "inline";
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-      setTimeout(moveLinks, 500);
-=======
-      setTimeout(moveLinks, 300);
->>>>>>> 9f0bf50db7144898bb75be310a0295a7a03310ab
-    } else if (h1PosTop <= 1) {
-      h1PosLeft--;
-=======
       setTimeout(moveLinks, 3);
     } else if (h1PosTop <= 3) {
       h1PosLeft-=3;
->>>>>>> Stashed changes
       h1.style.left = h1PosLeft + "px";
     } else if (h1PosLeft <= 3) {
       h1PosTop-=3;
@@ -82,7 +57,7 @@ function moveLinks() {
   var linksPosRight = bodyRect.right - linksRect.right;
   var linksPosTop = linksRect.top;
   clearInterval(id);
-  id = setInterval(frame, 0.002);
+  id = setInterval(frame, 2);
   function frame() {
     if (linksPosTop <= 3 && linksPosRight <= 3) {
       links.style.top = "0px";
