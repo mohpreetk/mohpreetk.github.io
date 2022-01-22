@@ -33,6 +33,7 @@ nav >  a {
 
 .responsiveNav {
     width: fit-content;
+    width: -moz-fit-content;
 }
 
 .responsiveNav:hover .navitem{
@@ -46,6 +47,7 @@ nav >  a {
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
+    width: -moz-fit-content;
     position: relative;
 }
 
