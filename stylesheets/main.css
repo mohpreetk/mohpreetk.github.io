@@ -120,13 +120,17 @@ main {
 }
 
 /* ---------------------------------------------------------------- */
-/* About Me Article */
+/* About Me and Article */
 .panel {
     font-size: 1.2rem;
     margin: 20px;
     border-style: ridge;
     border-radius: 3%;
     padding: 20px;
+}
+
+.panel.education {
+    border-radius: 1%;   
 }
 
 /* ---------------------------------------------------------------- */
